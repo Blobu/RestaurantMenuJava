@@ -1,0 +1,289 @@
+{
+  "meniu_restaurant" : {
+    "BauturiRacoritoare" : [ {
+      "alergeni" : [ ],
+      "quantity" : 400,
+      "pret" : 18.0,
+      "pret_dupa_reducere" : 18.0,
+      "nume" : "Limonadă cu mentă și miere",
+      "ingrediente" : [ "Suc proaspăt de lămâie", "Apă plată", "Miere polifloră", "Mentă proaspătă", "Gheață" ]
+    }, {
+      "alergeni" : [ ],
+      "quantity" : 750,
+      "pret" : 10.0,
+      "pret_dupa_reducere" : 10.0,
+      "nume" : "Apă plată",
+      "ingrediente" : [ "Apă minerală plată naturală" ]
+    }, {
+      "alergeni" : [ ],
+      "quantity" : 750,
+      "pret" : 10.0,
+      "pret_dupa_reducere" : 10.0,
+      "nume" : "Apă minerală",
+      "ingrediente" : [ "Apă minerală carbogazoasă naturală" ]
+    }, {
+      "alergeni" : [ ],
+      "quantity" : 250,
+      "pret" : 22.0,
+      "pret_dupa_reducere" : 22.0,
+      "nume" : "Fresh de portocale",
+      "ingrediente" : [ "Portocale stoarse 100%" ]
+    }, {
+      "alergeni" : [ ],
+      "quantity" : 250,
+      "pret" : 22.0,
+      "pret_dupa_reducere" : 22.0,
+      "nume" : "Fresh de grepfrut",
+      "ingrediente" : [ "Grepfrut stors 100%" ]
+    }, {
+      "alergeni" : [ ],
+      "quantity" : 250,
+      "pret" : 12.0,
+      "pret_dupa_reducere" : 12.0,
+      "nume" : "Coca Cola",
+      "ingrediente" : [ "Apă carbogazoasă", "Zahăr", "Colorant caramel", "Acidifiant", "Arome naturale", "Cafeină" ]
+    }, {
+      "alergeni" : [ ],
+      "quantity" : 250,
+      "pret" : 12.0,
+      "pret_dupa_reducere" : 12.0,
+      "nume" : "Fanta",
+      "ingrediente" : [ "Apă carbogazoasă", "Zahăr", "Suc de portocale", "Acidifiant", "Arome naturale", "Conservanți" ]
+    }, {
+      "alergeni" : [ ],
+      "quantity" : 250,
+      "pret" : 12.0,
+      "pret_dupa_reducere" : 12.0,
+      "nume" : "Sprite",
+      "ingrediente" : [ "Apă carbogazoasă", "Zahăr", "Acidifiant", "Arome naturale de lămâie și lime" ]
+    }, {
+      "alergeni" : [ ],
+      "quantity" : 30,
+      "pret" : 9.0,
+      "pret_dupa_reducere" : 9.0,
+      "nume" : "Espresso",
+      "ingrediente" : [ "Cafea măcinată", "Apă" ]
+    } ],
+    "BauturiAlcoolice" : [ {
+      "alergeni" : [ "Sulfiți" ],
+      "quantity" : 150,
+      "pret" : 20.0,
+      "pret_dupa_reducere" : 20.0,
+      "nume" : "Vinul Rosu",
+      "ingrediente" : [ "Struguri negri fermentați", "Sulfiți" ]
+    }, {
+      "alergeni" : [ "Sulfiți" ],
+      "quantity" : 150,
+      "pret" : 20.0,
+      "pret_dupa_reducere" : 20.0,
+      "nume" : "Vinul Alb",
+      "ingrediente" : [ "Struguri albi fermentați", "Sulfiți" ]
+    }, {
+      "alergeni" : [ "Sulfiți" ],
+      "quantity" : 150,
+      "pret" : 20.0,
+      "pret_dupa_reducere" : 20.0,
+      "nume" : "Vinul Rose",
+      "ingrediente" : [ "Struguri fermentați (metoda rose)", "Sulfiți" ]
+    }, {
+      "alergeni" : [ ],
+      "quantity" : 250,
+      "pret" : 35.0,
+      "pret_dupa_reducere" : 35.0,
+      "nume" : "Mojito",
+      "ingrediente" : [ "Rom alb", "Zahăr brun", "Lime", "Mentă", "Apă minerală", "Gheață pisată" ]
+    }, {
+      "alergeni" : [ "Sulfiți" ],
+      "quantity" : 300,
+      "pret" : 38.0,
+      "pret_dupa_reducere" : 38.0,
+      "nume" : "Aperol Spritz",
+      "ingrediente" : [ "Prosecco", "Aperol", "Apă minerală", "Felie de portocală", "Gheață" ]
+    }, {
+      "alergeni" : [ "Gluten" ],
+      "quantity" : 500,
+      "pret" : 22.0,
+      "pret_dupa_reducere" : 22.0,
+      "nume" : "Bere",
+      "ingrediente" : [ "Apă", "Malț din orz", "Hamei", "Drojdie" ]
+    }, {
+      "alergeni" : [ ],
+      "quantity" : 40,
+      "pret" : 45.0,
+      "pret_dupa_reducere" : 45.0,
+      "nume" : "Whisky 12 YO",
+      "ingrediente" : [ "Distilat din cereale", "Apă" ]
+    }, {
+      "alergeni" : [ ],
+      "quantity" : 30,
+      "pret" : 15.0,
+      "pret_dupa_reducere" : 15.0,
+      "nume" : "Shot Tequila",
+      "ingrediente" : [ "Distilat de agave albastră", "Sare", "Felie de lime" ]
+    } ],
+    "FelPrincipal" : [ {
+      "alergeni" : [ "Lapte" ],
+      "quantity" : 300,
+      "pret" : 95.0,
+      "pret_dupa_reducere" : 95.0,
+      "nume" : "Mușchi de vită la grătar cu sos de piper",
+      "ingrediente" : [ "Mușchi de vită maturat", "Piper verde", "Smântână lichidă", "Unt", "Coniac", "Sare de mare" ]
+    }, {
+      "alergeni" : [ "Gluten", "Ou", "Lapte" ],
+      "quantity" : 350,
+      "pret" : 42.0,
+      "pret_dupa_reducere" : 42.0,
+      "nume" : "Paste Carbonara Originale",
+      "ingrediente" : [ "Spaghetti", "Guanciale", "Ouă", "Brânză Pecorino Romano", "Piper negru proaspăt măcinat" ]
+    }, {
+      "alergeni" : [ "Pește" ],
+      "quantity" : 320,
+      "pret" : 58.0,
+      "pret_dupa_reducere" : 58.0,
+      "nume" : "Somon cu legume la cuptor",
+      "ingrediente" : [ "File de somon", "Dovlecei", "Ardei gras", "Morcovi", "Lămâie", "Ulei de măsline", "Ierburi aromatice" ]
+    }, {
+      "alergeni" : [ "Gluten", "Lapte", "Ou", "Susan" ],
+      "quantity" : 400,
+      "pret" : 45.0,
+      "pret_dupa_reducere" : 45.0,
+      "nume" : "Burger Black Angus cu cartofi prăjiți",
+      "ingrediente" : [ "Carne de vită Black Angus", "Chiflă brioche", "Brânză Cheddar", "Bacon", "Salată", "Roșii", "Ceapă caramelizată", "Sosul casei", "Cartofi" ]
+    }, {
+      "alergeni" : [ ],
+      "quantity" : 500,
+      "pret" : 55.0,
+      "pret_dupa_reducere" : 55.0,
+      "nume" : "Coaste de porc BBQ",
+      "ingrediente" : [ "Coaste de porc", "Sos barbeque", "Miere", "Usturoi", "Boia afumată", "Condimente" ]
+    }, {
+      "alergeni" : [ "Gluten", "Ou", "Lapte" ],
+      "quantity" : 250,
+      "pret" : 40.0,
+      "pret_dupa_reducere" : 40.0,
+      "nume" : "Schnitzel Vienez din vită",
+      "ingrediente" : [ "Pulpă de vițel", "Făină", "Ou", "Pesmet auriu", "Unt clarifiat", "Felie de lămâie" ]
+    }, {
+      "alergeni" : [ "Gluten", "Lapte" ],
+      "quantity" : 450,
+      "pret" : 32.0,
+      "pret_dupa_reducere" : 32.0,
+      "nume" : "Pizza Margherita",
+      "ingrediente" : [ "Blat pizza", "Sos de roșii", "Mozzarella fior di latte", "Busuioc proaspăt", "Ulei de măsline" ]
+    }, {
+      "alergeni" : [ "Gluten", "Lapte" ],
+      "quantity" : 480,
+      "pret" : 38.0,
+      "pret_dupa_reducere" : 38.0,
+      "nume" : "Pizza Diavola (Picantă)",
+      "ingrediente" : [ "Blat pizza", "Sos de roșii", "Mozzarella", "Salam picant Ventricina", "Ardei iute" ]
+    }, {
+      "alergeni" : [ "Gluten", "Lapte" ],
+      "quantity" : 460,
+      "pret" : 42.0,
+      "pret_dupa_reducere" : 42.0,
+      "nume" : "Pizza Quattro Formaggi",
+      "ingrediente" : [ "Blat pizza", "Mozzarella", "Gorgonzola", "Parmezan", "Emmentaler" ]
+    }, {
+      "alergeni" : [ "Gluten", "Lapte" ],
+      "quantity" : 500,
+      "pret" : 39.0,
+      "pret_dupa_reducere" : 39.0,
+      "nume" : "Pizza Prosciutto e Funghi",
+      "ingrediente" : [ "Blat pizza", "Sos de roșii", "Mozzarella", "Șuncă presată", "Ciuperci proaspete" ]
+    }, {
+      "alergeni" : [ "Gluten", "Lapte" ],
+      "quantity" : 520,
+      "pret" : 40.0,
+      "pret_dupa_reducere" : 40.0,
+      "nume" : "Pizza Capricciosa",
+      "ingrediente" : [ "Blat pizza", "Sos de roșii", "Mozzarella", "Șuncă", "Ciuperci", "Anghinare", "Măsline negre" ]
+    }, {
+      "alergeni" : [ "Gluten", "Lapte" ],
+      "quantity" : 480,
+      "pret" : 35.0,
+      "pret_dupa_reducere" : 35.0,
+      "nume" : "Pizza Vegetariană",
+      "ingrediente" : [ "Blat pizza", "Sos de roșii", "Mozzarella", "Dovlecei", "Vinete", "Ardei gras", "Ciuperci", "Ceapă", "Porumb" ]
+    }, {
+      "alergeni" : [ "Gluten", "Lapte" ],
+      "quantity" : 550,
+      "pret" : 45.0,
+      "pret_dupa_reducere" : 45.0,
+      "nume" : "Pizza Carnivora",
+      "ingrediente" : [ "Blat pizza", "Sos de roșii", "Mozzarella", "Șuncă", "Salam", "Bacon", "Cârnați", "Piept de pui" ]
+    } ],
+    "Desert" : [ {
+      "alergeni" : [ "Gluten", "Ou", "Lapte" ],
+      "quantity" : 150,
+      "pret" : 28.0,
+      "pret_dupa_reducere" : 28.0,
+      "nume" : "Lava Cake cu înghețată de vanilie",
+      "ingrediente" : [ "Ciocolată neagră", "Unt", "Ouă", "Făină", "Zahăr", "Înghețată de vanilie" ]
+    }, {
+      "alergeni" : [ "Gluten", "Ou", "Lapte", "Sulfiți" ],
+      "quantity" : 180,
+      "pret" : 24.0,
+      "pret_dupa_reducere" : 24.0,
+      "nume" : "Tiramisu Clasic",
+      "ingrediente" : [ "Mascarpone", "Pișcoturi", "Cafea espresso", "Ouă", "Zahăr", "Cacao", "Vin Marsala" ]
+    }, {
+      "alergeni" : [ "Gluten", "Ou", "Lapte" ],
+      "quantity" : 250,
+      "pret" : 30.0,
+      "pret_dupa_reducere" : 30.0,
+      "nume" : "Papanași cu smântână și dulceață de afine",
+      "ingrediente" : [ "Brânză de vaci", "Făină", "Ouă", "Zahăr", "Coajă de lămâie", "Smântână fermentată", "Dulceață de afine" ]
+    }, {
+      "alergeni" : [ "Gluten", "Ou", "Lapte" ],
+      "quantity" : 160,
+      "pret" : 26.0,
+      "pret_dupa_reducere" : 26.0,
+      "nume" : "Cheesecake cu fructe de pădure",
+      "ingrediente" : [ "Biscuiți digestivi", "Unt", "Cremă de brânză", "Zahăr", "Ouă", "Sos de fructe de pădure" ]
+    }, {
+      "alergeni" : [ "Gluten", "Ou", "Lapte" ],
+      "quantity" : 200,
+      "pret" : 22.0,
+      "pret_dupa_reducere" : 22.0,
+      "nume" : "Clătite cu ciocolată și banane",
+      "ingrediente" : [ "Făină", "Lapte", "Ouă", "Apă minerală", "Cremă de ciocolată", "Banane proaspete" ]
+    } ],
+    "Aperitive" : [ {
+      "alergeni" : [ "Gluten" ],
+      "quantity" : 200,
+      "pret" : 25.0,
+      "pret_dupa_reducere" : 25.0,
+      "nume" : "Bruschette cu roșii și busuioc",
+      "ingrediente" : [ "Pâine prăjită", "Roșii proaspete", "Usturoi", "Busuioc verde", "Ulei de măsline extravirgin", "Sare", "Piper" ]
+    }, {
+      "alergeni" : [ "Lapte", "Nuci", "Gluten" ],
+      "quantity" : 450,
+      "pret" : 65.0,
+      "pret_dupa_reducere" : 65.0,
+      "nume" : "Platou brânzeturi fine și struguri",
+      "ingrediente" : [ "Brie", "Gorgonzola", "Parmezan", "Camembert", "Struguri albi", "Struguri roșii", "Nuci", "Miere", "Biscuiți sărați" ]
+    }, {
+      "alergeni" : [ "Pește", "Soia", "Susan" ],
+      "quantity" : 200,
+      "pret" : 48.0,
+      "pret_dupa_reducere" : 48.0,
+      "nume" : "Tartar de ton cu avocado",
+      "ingrediente" : [ "Ton proaspăt", "Avocado", "Ceapă roșie", "Capere", "Ulei de susan", "Sos de soia", "Lime", "Arpagic" ]
+    }, {
+      "alergeni" : [ "Lapte" ],
+      "quantity" : 180,
+      "pret" : 32.0,
+      "pret_dupa_reducere" : 32.0,
+      "nume" : "Halloumi la grătar cu salată",
+      "ingrediente" : [ "Brânză Halloumi", "Mix de salată", "Roșii cherry", "Ulei de măsline", "Oregano", "Dressing de lămâie" ]
+    }, {
+      "alergeni" : [ "Moluscă", "Gluten", "Ou" ],
+      "quantity" : 220,
+      "pret" : 29.0,
+      "pret_dupa_reducere" : 29.0,
+      "nume" : "Inele de calamar pane cu sos aioli",
+      "ingrediente" : [ "Inele de calamar", "Făină", "Ou", "Pesmet panko", "Ulei pentru prăjit", "Usturoi", "Maioneză", "Lămâie" ]
+    } ]
+  }
+}
