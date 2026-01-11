@@ -1,35 +1,31 @@
-package org.example;
+// java
+package Products;
 
-public class Pizza extends Mancare{
+import java.util.ArrayList;
+import java.util.Objects;
+
+public class Pizza extends Mancare {
     // Required parameters
-    private  String size;
+    private String size;
 
-    //Optional paramters
+    // Optional parameters
     private boolean extraCheese;
     private boolean mushrooms;
     private boolean olives;
     private boolean pepperoni;
 
-    private Pizza(String nume, double pret, Type tip, int gramaj, java.util.ArrayList<String> ingredients,
-                 java.util.ArrayList<String> alergeni, String size, boolean extraCheese, boolean mushrooms,
-                 boolean olives, boolean pepperoni){
-        if(size.equalsIgnoreCase("Mica")) {
-            pret -= 10;
-        }
-        else if(size.equalsIgnoreCase("Medie"))
-        {
-            pret +=0;
-        }
-        else if(size.equalsIgnoreCase("Mare"))
-        {
-            pret +=10;
-        }
-        else
-        {
-            throw new IllegalArgumentException("Ileagel size for pizza");
-        }
-
-        super(nume, pret, tip, gramaj, ingredients, alergeni);
+    private Pizza(String nume,
+                  double pret,
+                  Type tip,
+                  int gramaj,
+                  ArrayList<String> ingredients,
+                  ArrayList<String> alergeni,
+                  String size,
+                  boolean extraCheese,
+                  boolean mushrooms,
+                  boolean olives,
+                  boolean pepperoni) {
+        super(nume, adjustedPrice(pret, size), tip, gramaj, ingredients, alergeni);
         this.size = size;
         this.extraCheese = extraCheese;
         this.mushrooms = mushrooms;
@@ -37,26 +33,38 @@ public class Pizza extends Mancare{
         this.pepperoni = pepperoni;
     }
 
-
+    private static double adjustedPrice(double pret, String size) {
+        Objects.requireNonNull(size, "size must not be null");
+        switch (size.toLowerCase()) {
+            case "mica":
+                return pret - 10;
+            case "medie":
+                return pret;
+            case "mare":
+                return pret + 10;
+            default:
+                throw new IllegalArgumentException("Illegal size for pizza");
+        }
+    }
 
     public static class Builder {
-
         // Required parameters
         private final String nume;
         private final double pret;
         private final Type tip;
         private final int gramaj;
-        private final java.util.ArrayList<String> ingredients;
-        private final java.util.ArrayList<String> alergeni;
+        private final ArrayList<String> ingredients;
+        private final ArrayList<String> alergeni;
         private final String size;
 
-        //Optional paramters
+        // Optional parameters
         private boolean extraCheese;
         private boolean mushrooms;
         private boolean olives;
         private boolean pepperoni;
 
-        public Builder(String nume, double pret, Type tip, int gramaj, java.util.ArrayList<String> ingredients, java.util.ArrayList<String> alergeni,String size) {
+        public Builder(String nume, double pret, Type tip, int gramaj,
+                       ArrayList<String> ingredients, ArrayList<String> alergeni, String size) {
             this.size = size;
             this.nume = nume;
             this.pret = pret;
@@ -74,28 +82,31 @@ public class Pizza extends Mancare{
             this.gramaj = produs.getQuantity();
             this.ingredients = produs.getIngredients();
             this.alergeni = produs.getAlergeni();
-
         }
 
         public Builder extraCheese(boolean value) {
             this.extraCheese = value;
             return this;
         }
+
         public Builder mushrooms(boolean value) {
             this.mushrooms = value;
             return this;
         }
+
         public Builder olives(boolean value) {
             this.olives = value;
             return this;
         }
+
         public Builder pepperoni(boolean value) {
             this.pepperoni = value;
             return this;
         }
 
         public Pizza build() {
-            return new Pizza(nume, pret, tip, gramaj, ingredients, alergeni, size, extraCheese, mushrooms, olives, pepperoni);
+            return new Pizza(nume, pret, tip, gramaj, ingredients, alergeni, size,
+                    extraCheese, mushrooms, olives, pepperoni);
         }
     }
 

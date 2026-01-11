@@ -1,5 +1,11 @@
 package org.example;
 
+import Menu.IOferte;
+import Menu.Menu;
+import Menu.ReadFile;
+import Products.Produs;
+import Products.ProdusInterface;
+
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -8,7 +14,7 @@ import java.util.List;
 
 public class Main {
     static void main() throws IOException {
-    Path path = Path.of("C:\\Facultate\\AN_2_SEM_1\\MIP\\MeniuRestaurant\\src\\main\\java\\org\\example\\config.json");
+    Path path = Path.of("C:\\Facultate\\AN_2_SEM_1\\MIP\\MeniuRestaurant\\RestaurantMenuJava\\src\\main\\java\\org\\example\\config.json");
 
 
         String numeRestaurant = ReadFile.readNumeRestaurant(path);
@@ -53,7 +59,7 @@ public class Main {
                 switch (ReadFile.readInt(5)) {
                     case 1 -> ReadFile.printMenu(menu);
                     case 2 -> {
-                        ArrayList<String> NonVeganProducts = ReadFile.ReadNonVegetarian(Path.of("C:\\Facultate\\AN_2_SEM_1\\MIP\\MeniuRestaurant\\src\\main\\java\\org\\example\\IngredienteNevegetariene.txt"));
+                        ArrayList<String> NonVeganProducts = ReadFile.ReadNonVegetarian(Path.of("C:\\Facultate\\AN_2_SEM_1\\MIP\\MeniuRestaurant\\RestaurantMenuJava\\src\\main\\java\\org\\example\\IngredienteNevegetariene.txt"));
 
 
                         for (ArrayList<Produs> Produse : menu.getMenu().values()) {
@@ -62,7 +68,7 @@ public class Main {
                                     .sorted(Comparator.comparing(Produs::getNume))
                                     .toList();
 
-                            System.out.println("\nProduse vegetariene in categoria " + (Produse.isEmpty() ? "N/A" : Produse.getFirst().getType()) + ":");
+                            System.out.println("\nProduse vegetariene in categoria " + (Produse.isEmpty() ? "N/A" : Produse.get(0).getType()) + ":");
                             for (Produs produs : vegetarianProducts) {
                                 System.out.println("- " + produs.getNume());
                             }
@@ -87,7 +93,7 @@ public class Main {
                             System.out.println("Nu, nu avem preparate care costa mai mult de 100 RON.");
                         }
                     }
-                    case 5 -> ReadFile.exportMenuToJson(menu, Path.of("C:\\Facultate\\AN_2_SEM_1\\MIP\\MeniuRestaurant\\src\\main\\java\\org\\example\\exported_menu.json"));
+                    case 5 -> ReadFile.exportMenuToJson(menu, Path.of("C:\\Facultate\\AN_2_SEM_1\\MIP\\MeniuRestaurant\\RestaurantMenuJava\\src\\main\\java\\org\\example\\exported_menu.json"));
                     default -> System.out.println("Optiune invalida. Iesire din program.");
                 }
 
@@ -101,9 +107,9 @@ public class Main {
             case 3 -> {
                 System.out.println("Bine ai venit, Client!\n");
                 ReadFile.printMenu(menu);
-                Comanda comanda = new Comanda(menu.getMenu());
-                ReadFile.ReadComanda(comanda);
-                comanda.printOrderSummary();
+                ComandaConsola comandaConsola = new ComandaConsola(menu.getMenu());
+                ReadFile.ReadComanda(comandaConsola);
+                comandaConsola.printOrderSummary();
             }
             default ->System.out.println("Nivel de acces invalid. Iesire din program.");
         }

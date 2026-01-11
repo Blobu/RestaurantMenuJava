@@ -1,4 +1,6 @@
-package org.example;
+package Menu;
+
+import Products.Produs;
 
 public interface IOferte {
 

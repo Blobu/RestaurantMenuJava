@@ -1,7 +1,13 @@
-package org.example;
+package Menu;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import Products.Bautura;
+import Products.Mancare;
+import Products.Produs;
+import Products.ProdusInterface;
+import org.example.ComandaConsola;
+
 import java.io.IOException;
 import java.nio.file.Path;
 import java.text.Normalizer;
@@ -187,7 +193,7 @@ public class ReadFile {
         return nivelAcces;
     }
 
-    public static void ReadComanda(Comanda comanda) {
+    public static void ReadComanda(ComandaConsola comandaConsola) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n\nIntroduceti produsele dorite (format: 'Nume Produs, Cantitate'), sau 'gata' pentru a finaliza:");
         while (true) {
@@ -208,7 +214,7 @@ public class ReadFile {
                 System.out.println("Cantitate invalida. Va rugam sa introduceti un numar valid.");
                 continue;
             }
-            comanda.addProduct(productName, quantity);
+            comandaConsola.addProduct(productName, quantity);
         }
 
     }

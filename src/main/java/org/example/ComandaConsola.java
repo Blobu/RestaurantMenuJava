@@ -1,13 +1,17 @@
 package org.example;
+import Products.Pizza;
+import Products.Produs;
+import Products.ProdusInterface;
+
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Comanda {
+public class ComandaConsola {
     private final Map<ProdusInterface.Type, ArrayList<Produs>> Menu;
     private final Map<Produs, Integer> orderedProducts = new java.util.HashMap<>();
 
-    public Comanda(Map<ProdusInterface.Type, ArrayList<Produs>> menu) {
+    public ComandaConsola(Map<ProdusInterface.Type, ArrayList<Produs>> menu) {
         Menu = menu;
     }
 

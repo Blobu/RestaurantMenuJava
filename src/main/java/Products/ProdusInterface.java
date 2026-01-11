@@ -1,4 +1,4 @@
-package org.example;
+package Products;
 
 import java.util.ArrayList;
 
@@ -10,6 +10,10 @@ public interface ProdusInterface {
         BauturiRacoritoare,
         BauturiAlcoolice
     }
+
+    Long getId();
+
+    void setId(Long id);
 
     Type getType();
 
