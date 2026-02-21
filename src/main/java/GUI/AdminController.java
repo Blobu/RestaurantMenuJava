@@ -72,7 +72,7 @@ public class AdminController {
         TabPane tabPane = new TabPane();
         tabPane.setTabClosingPolicy(TabPane.TabClosingPolicy.UNAVAILABLE);
 
-        // Acum putem crea tab-urile în siguranță.
+
         // Când refreshStaffTable() va rula, rootStack există deja în memorie.
         tabPane.getTabs().addAll(
                 new Tab("Personal (HR)", createStaffContent()),
@@ -124,6 +124,7 @@ public class AdminController {
             @Override
             protected T call() throws Exception {
                 // SIMULARE ÎNTÂRZIERE (pentru demonstrație)
+
                 //Thread.sleep(1000);
 
                 // Executăm logica reală (DB, Service)
